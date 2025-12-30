@@ -15,7 +15,6 @@ main{
     justify-content: center;
 }
 section:first-child{
-    border: solid green;
     color: #fff;
 }
 section:first-child > h1 {
@@ -26,4 +25,44 @@ section:first-child > h1 {
 section:first-child > p {
   width: 50ch;
   margin-top: 30px;
+}
+section:last-child > form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.btn{
+   color: #fff;
+   text-align: center;
+   text-decoration: none;
+   padding-top: 12px;
+   padding-bottom: 12px;
+   border-radius: 10px;
+   display: block;
+}
+section:last-child > form{
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 40px;
+    border-radius: 20px;
+}
+section:last-child > a:first-child{
+    
+   background-color: hsl(248, 32%, 49%);
+   
+}
+
+section:last-child > form > button {
+  background-color: hsl(154, 59%, 51%);
+  /* transforma el texto a mayuscula */
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  /* cambia el peso de la fuenta a negrita bold = negrita */
+  /* font-weight: bold; */
+}
+input{
+    padding: 18px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 6px;
+    border: solid 1px hsl(249, 10%, 26%);
 }
