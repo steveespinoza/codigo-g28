@@ -102,6 +102,29 @@ main{
   padding: 10px 40px;
   border-radius: 5px;
 }
+.text-2xl{
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.progress-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.progress-container > progress{
+  width: 100%;
+  border-radius: 6px;
+  height: 12px;
+}
+.progress-container > progress::-webkit-progress-bar{
+  background-color: white;
+  border-radius: 6px;
+}
+.progress-container > progress::-webkit-progress-value{
+  background-color: #fd6f00;
+  border-radius: 6px;
+}
 @media (min-width: 1025px) {
   .menu {
     flex-direction: row;
