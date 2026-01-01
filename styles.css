@@ -45,11 +45,17 @@ main{
 }
 .container {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   padding: 32px;
   justify-content: center;
   align-items: center;
   gap: 25px;
+}
+.container-reverse{
+  flex-direction: column-reverse;
+}
+.text-center{
+  text-align: center;
 }
 
 .profile {
@@ -74,6 +80,7 @@ main{
   justify-content: center;
   align-items: center;
   gap: 25px;
+  width: 250px;
 }
 .gretting {
   font-weight: 600;
@@ -125,6 +132,43 @@ main{
   background-color: #fd6f00;
   border-radius: 6px;
 }
+.grid-projects {
+  display: grid;
+  gap: 50px;
+}
+.card{
+  color : #fff
+}
+.card-images {
+  background-color: #ffebdb;
+  border-radius: 6px;
+  position: relative;
+
+  width: 445px;
+  height: 489px;
+  text-align: right;
+}
+.card-images > div  > img {
+  width: 274px;
+}
+.card-images > div > img:first-child {
+  position: absolute;
+  bottom: -3px;
+  right: 115px;
+}
+.card-images > div > img:last-child {
+  padding-right: 40px;
+  height: 489px;
+  object-fit: cover;
+}
+.card-body{
+  margin-top: 30px;
+
+}
+.card-body > p {
+  color: #fd6f00;
+  margin-bottom: 15px;
+}
 @media (min-width: 1025px) {
   .menu {
     flex-direction: row;
@@ -135,11 +179,15 @@ main{
     flex-direction: row;
     gap: 40px;
   }
+  main{
+    max-width: 1400px;
+    margin: auto;
+  }
   .container{
     flex-direction: row;
-    justify-content: space-between;
-    max-width: 60%;
-    margin: auto;
+    /*justify-content: space-between;*/
+    /*max-width: 60%;*/
+    /*margin: auto;*/
   }
   .container > section:first-child{
     flex-grow: 1;
@@ -154,5 +202,8 @@ main{
    .description {
     width: 50ch;
     margin-top: 30px;
+  }
+  .grid-projects{
+    grid-template-columns: repeat(3,1fr);
   }
 }
