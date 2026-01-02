@@ -43,6 +43,9 @@ a {
 main{
     margin-top: 40px;
 }
+.p-0{
+  padding: 0 !important;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -193,6 +196,17 @@ main{
 .card-body > p {
   color: #fd6f00;
   margin-bottom: 15px;
+}
+footer{
+  margin-top: 50px;
+}
+.container-footer{
+  background-color: #121212;
+  text-align: center;
+  padding: 26px;
+}
+.container-footer > p > span{
+  color: #fd6f00;
 }
 @media (min-width: 1025px) {
   .menu {
